@@ -175,10 +175,15 @@ export function initHeroParticles() {
   const purpleColor = new THREE.Color(0x9d4edd); // Modern neon purple
 
   const clock = new THREE.Clock();
+  let wavePhase = 0;
 
   function animate() {
     requestAnimationFrame(animate);
-    const elapsed = clock.getElapsedTime();
+    const dt = Math.min(clock.getDelta(), 0.1);
+    
+    // Speed up fluid wave ripples when scrolling
+    const waveSpeed = 1.2 + scrollY * 0.006;
+    wavePhase += dt * waveSpeed;
 
     // Find the 3D mouse intersection point on our particle plane
     raycaster.setFromCamera(mouse, camera);
@@ -210,9 +215,9 @@ export function initHeroParticles() {
       const homeG = homeColors[i3 + 1];
       const homeB = homeColors[i3 + 2];
 
-      // Organic fluid flow wave coordinate drift
-      const waveX = Math.sin(elapsed * 1.2 + homeX * 0.4 + homeY * 0.3) * 0.15;
-      const waveY = Math.cos(elapsed * 1.0 + homeX * 0.3 + homeY * 0.4) * 0.15;
+      // Organic fluid flow wave coordinate drift (ripples speed up during scrolling)
+      const waveX = Math.sin(wavePhase + homeX * 0.4 + homeY * 0.3) * 0.15;
+      const waveY = Math.cos(wavePhase * 0.83 + homeX * 0.3 + homeY * 0.4) * 0.15;
 
       const flowHomeX = homeX + waveX;
       const flowHomeY = homeY + waveY;
@@ -278,10 +283,10 @@ export function initHeroParticles() {
     colorAttr.needsUpdate = true;
     velAttr.needsUpdate = true;
 
-    // Scroll parallax rotation
-    particleSystem.rotation.x = scrollY * 0.0006;
-    particleSystem.rotation.y = scrollY * 0.0003;
-    particleSystem.position.z = -scrollY * 0.003;
+    // Keep grid fixed in position so it covers the entire graphic area without cut-off
+    particleSystem.rotation.x = 0;
+    particleSystem.rotation.y = 0;
+    particleSystem.position.z = 0;
 
     renderer.render(scene, camera);
   }
