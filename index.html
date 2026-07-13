@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flync — The unified Industry 4.0 operations suite. Automate quality compliance, track pallets with RFID, predict machine failures, and train teams with XR. Built for Indian manufacturing plants.">
+  <meta name="keywords" content="Industry 4.0, PFMEA, AIAG-VDA, manufacturing, quality compliance, RFID tracking, predictive maintenance, smart factory, India">
+  <meta property="og:title" content="Flync — Factory Floor, Synced.">
+  <meta property="og:description" content="The unified Industry 4.0 operations suite for manufacturing plants.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flync.co.in">
+  <title>Flync — Factory Floor, Synced.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://esm.sh/three@0.164.1"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="assets/flync-logo.png" alt="Flync Logo" class="logo-img">
+        <span>FLYNC</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#products">Products</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a href="#contact" class="btn-primary nav-cta">Request Demo</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container hero-content">
+      <div class="hero-badge">Industry 4.0 Operations Suite</div>
+      <h1>Next-Gen Tech for<br>Next-Gen Factories</h1>
+      <p class="hero-tagline">FACTOLYNC</p>
+      <p class="subtitle">Automate quality compliance, track materials with RFID, predict machine failures, and train your teams with immersive XR — all from one unified platform built for Indian manufacturing.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Request a Free Audit →</a>
+        <a href="#products" class="btn-secondary">Explore Products</a>
+      </div>
+      <div class="hero-tags">
+        <span>AIAG-VDA 2019</span>
+        <span>ISO 9001:2015 / ISO 9001:2026</span>
+        <span>IATF 16949</span>
+        <span>ISA/IEC 62443</span>
+        <span>ISO/IEC 27001</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       STATS BAR
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="stats-section">
+    <div class="container stats-bar">
+      <div class="stat">
+        <div class="stat-number" data-target="5" data-suffix="+">0</div>
+        <div class="stat-label">Product Suite</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="100" data-suffix="%">0</div>
+        <div class="stat-label">AIAG-VDA Compliant</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+        <div class="stat-label">Edge Monitoring</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="0" data-prefix="₹" data-suffix=" Setup">0</div>
+        <div class="stat-label">Zero Capital Start</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PRODUCTS
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="products">
+    <div class="container">
+      <h2 class="section-title animate-in">Our Product Suite</h2>
+      <p class="section-subtitle animate-in">Five integrated tools designed to digitize every department of your manufacturing plant.</p>
+
+      <div class="products-grid">
+        <!-- Product 1: PFMEA Pro -->
+        <div class="product-card animate-in">
+          <div class="card-3d-canvas" data-scene="gear"></div>
+          <span class="tag tag-live">● Live</span>
+          <h3>PFMEA Pro</h3>
+          <p>AI-powered quality compliance engine. Auto-validates AIAG-VDA 2019 ratings, suggests failure modes, and exports audit-ready PDF &amp; Excel reports in seconds.</p>
+        </div>
+
+        <!-- Product 2: RFID Pallet Tracker -->
+        <div class="product-card animate-in">
+          <div class="card-3d-canvas" data-scene="chip"></div>
+          <span class="tag tag-development">In Development</span>
+          <h3>RFID Pallet Tracker</h3>
+          <p>Real-time material flow visibility. Track pallets, bins, and WIP across your shop floor with passive RFID tags and edge gateway readers.</p>
+        </div>
+
+        <!-- Product 3: Predictive Maintenance -->
+        <div class="product-card animate-in">
+          <div class="card-3d-canvas" data-scene="wave"></div>
+          <span class="tag tag-development">In Development</span>
+          <h3>Predictive Maintenance</h3>
+          <p>Edge telemetry and anomaly detection. Analyze vibration, temperature, and current draw from PLCs via OPC-UA to predict failures before they happen.</p>
+        </div>
+
+        <!-- Product 4: AI SOP Chatbot -->
+        <div class="product-card animate-in">
+          <div class="card-3d-canvas" data-scene="bot"></div>
+          <span class="tag tag-roadmap">Roadmap</span>
+          <h3>AI SOP Chatbot</h3>
+          <p>Natural language factory assistant. Upload your SOPs, machine manuals, and error code PDFs — operators query them instantly via text or voice.</p>
+        </div>
+
+        <!-- Product 5: XR Training -->
+        <div class="product-card animate-in">
+          <div class="card-3d-canvas" data-scene="headset"></div>
+          <span class="tag tag-roadmap">Roadmap</span>
+          <h3>XR Training Modules</h3>
+          <p>Immersive AR/VR safety and assembly training. Reduce onboarding time by 60% with interactive 3D walkthroughs of critical procedures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HOW IT WORKS
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="how-it-works" class="how-section">
+    <div class="container">
+      <h2 class="section-title animate-in">How Flync Works</h2>
+      <p class="section-subtitle animate-in">Three simple steps to modernize your shop floor operations.</p>
+
+      <div class="steps">
+        <div class="step-card animate-in">
+          <div class="step-number">1</div>
+          <h3>Connect</h3>
+          <p>Upload your existing PFMEA sheets, connect RFID readers, or link your PLC sensors. Flync adapts to your existing infrastructure.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card animate-in">
+          <div class="step-number">2</div>
+          <h3>Analyze</h3>
+          <p>Our AI engine validates ratings, detects anomalies, tracks material flow, and surfaces actionable insights across every department.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card animate-in">
+          <div class="step-number">3</div>
+          <h3>Act</h3>
+          <p>Export compliance reports, trigger maintenance alerts, retrain operators with XR modules, and continuously reduce defects and downtime.</p>
+        </div>
+      </div>
+
+      <div id="infinity-container" style="width:100%;height:300px;margin-top:40px;"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FEATURES
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="features">
+    <div class="container">
+      <h2 class="section-title animate-in">Why Choose Flync</h2>
+      <p class="section-subtitle animate-in">Built by manufacturing engineers, for manufacturing engineers.</p>
+
+      <div class="features-grid">
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>AIAG-VDA 2019</h4>
+          <p>Full compliance with the latest automotive quality standards out of the box.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.84 19.84A9 9 0 0 1 12 21a9 9 0 0 1-9-9 9 9 0 0 1 1.16-4.36M12 3a9 9 0 0 1 9 9m-11.3 3L13.2 12M1 1l22 22"/></svg>
+          </div>
+          <h4>Works Offline</h4>
+          <p>Edge-first architecture. Runs on your local servers — your data never leaves your plant.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
+          </div>
+          <h4>AI-Powered</h4>
+          <p>Gemini AI suggests failure modes, controls, and maintenance schedules contextually.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.59 16.11a6 6 0 0 1 6.82 0M12 20h.01"/></svg>
+          </div>
+          <h4>RFID &amp; IoT Ready</h4>
+          <p>Plug in passive RFID tags and OPC-UA sensors with zero custom firmware.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 22H2M10 22V5a2 2 0 0 1 2-2h10M2 22V10a2 2 0 0 1 2-2h6M14 18h4M14 13h4M14 8h4"/></svg>
+          </div>
+          <h4>Multi-Plant</h4>
+          <p>Manage compliance, tracking, and maintenance across multiple facilities from one dashboard.</p>
+        </div>
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h4>XR Compatible</h4>
+          <p>Immersive training modules for Meta Quest, Apple Vision Pro, and HoloLens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-section animate-in">
+        <h2 class="section-title" style="text-align:left">Request a Free PFMEA Audit</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 32px">Send us your existing PFMEA sheet. We will validate it against AIAG-VDA 2019 and return a fully optimized, audit-ready report — completely free.</p>
+        <form class="contact-form" name="audit-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="audit-request">
+          <p style="display:none"><input name="bot-field"></p>
+          <input type="text" name="name" placeholder="Your Full Name" required id="contact-name">
+          <input type="email" name="email" placeholder="Work Email" required id="contact-email">
+          <input type="text" name="company" placeholder="Company / Plant Name" required id="contact-company">
+          <input type="tel" name="phone" placeholder="WhatsApp Number (Optional)" id="contact-phone">
+          <textarea name="message" placeholder="Tell us about your current PFMEA process or attach your Excel sheet link..." id="contact-message"></textarea>
+          <button type="submit" class="btn-primary" style="grid-column:span 2;justify-self:start" id="contact-submit">Submit Audit Request →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2026 Flync. All rights reserved. | <a href="https://flync.co.in">flync.co.in</a></p>
+        <p class="footer-tagline">Next-Gen Tech for Next-Gen Factories</p>
+        <p style="margin-top:8px;font-size:0.8rem;">Factory Floor, Synced. 🇮🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
