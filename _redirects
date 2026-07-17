@@ -1,0 +1,2 @@
+# Serve React Router SPA under /pfmea-pro/
+/pfmea-pro/*  /pfmea-pro/index.html  200
