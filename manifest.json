@@ -1,7 +1,7 @@
 {
   "short_name": "Flync",
-  "name": "Flync - Physical Tech Sprints",
-  "id": "flync-app-v3",
+  "name": "Flync - Internships & Gigs",
+  "id": "flync-pwa-v4",
   "icons": [
     {
       "src": "/flync-logo.png",
@@ -18,8 +18,8 @@
   ],
   "start_url": "/?mode=standalone#app",
   "scope": "/",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a",
+  "background_color": "#f8fafc",
+  "theme_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait"
 }
